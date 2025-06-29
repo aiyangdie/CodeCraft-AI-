@@ -1,4 +1,6 @@
-# AI智能助手网站
+# CodeCraft AI
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/aiyangdie/CodeCraft-AI-)
 
 一个现代化的AI智能助手展示网站，采用响应式设计，具有丰富的动画效果和交互体验。
 
@@ -54,7 +56,7 @@
 
 1. 克隆项目
 ```bash
-git clone [项目地址]
+git clone https://github.com/aiyangdie/CodeCraft-AI-.git
 cd wyy
 ```
 
@@ -142,4 +144,4 @@ MIT License
 
 ---
 
-**AI智能助手** - 用AI重新定义编程体验 🚀 
+**CodeCraft AI** - 用AI重新定义编程体验 🚀 
