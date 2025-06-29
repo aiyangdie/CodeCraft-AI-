@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI智能助手 - 你的智能编程伙伴，提供代码生成、错误修复、架构设计等全方位编程支持">
+    <meta name="keywords" content="AI助手,编程助手,代码生成,智能编程,开发工具">
+    <meta name="author" content="AI智能助手">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:title" content="AI智能助手 - 你的智能编程伙伴">
+    <meta property="og:description" content="基于先进的大语言模型技术，为你提供全方位的编程支持和智能解决方案">
+    <meta property="og:image" content="https://your-domain.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-domain.com/">
+    <meta property="twitter:title" content="AI智能助手 - 你的智能编程伙伴">
+    <meta property="twitter:description" content="基于先进的大语言模型技术，为你提供全方位的编程支持和智能解决方案">
+    <meta property="twitter:image" content="https://your-domain.com/og-image.jpg">
+    
+    <title>AI智能助手 - 你的智能编程伙伴</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    
+    <!-- 样式文件 -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- AOS动画库 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/aos/2.3.4/aos.css">
+    
+    <!-- Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AI智能助手",
+        "description": "基于先进的大语言模型技术，为你提供全方位的编程支持和智能解决方案",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CNY"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" id="nav-logo" style="cursor:pointer;">
+                <i class="fas fa-robot"></i>
+                <span>AI智能助手</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#capabilities">能力</a></li>
+                <li><a href="#agents">智能体</a></li>
+                <li><a href="#prompts">提示词</a></li>
+                <li><a href="#examples">案例</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页区域 -->
+    <section id="home" class="hero">
+        <!-- 粒子背景 -->
+        <div class="particles-container" id="particles"></div>
+        
+        <!-- 动态背景渐变 -->
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>AI驱动的智能编程助手</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">AI智能助手</span>
+                    <br>
+                    <span class="hero-subtitle">你的智能编程伙伴</span>
+                </h1>
+                
+                <p class="hero-description">
+                    基于先进的大语言模型技术，为你提供全方位的编程支持和智能解决方案。
+                    无论是前端开发、后端架构、数据分析，还是复杂的算法实现，我都能助你一臂之力。
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">编程语言</span>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <span class="stat-number" data-target="999">0</span>
+                        <span class="stat-label">代码生成</span>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">在线服务</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-section="capabilities">
+                        <i class="fas fa-rocket"></i>
+                        <span>探索能力</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                    <button class="btn btn-secondary" data-section="prompts">
+                        <i class="fas fa-magic"></i>
+                        <span>查看提示词</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                </div>
+                
+                <!-- 信任标识 -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>安全可靠</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>快速响应</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-users"></i>
+                        <span>专业团队</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left">
+                <div class="code-animation">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                        </div>
+                        <span class="code-title">AI Assistant</span>
+                        <div class="code-actions">
+                            <i class="fas fa-play"></i>
+                            <i class="fas fa-pause"></i>
+                            <i class="fas fa-stop"></i>
+                        </div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line typing">
+                            <span class="code-keyword">class</span> 
+                            <span class="code-class">AIAssistant</span> {
+                        </div>
+                        <div class="code-line typing">
+                            &nbsp;&nbsp;<span class="code-keyword">constructor</span>() {
+                        </div>
+                        <div class="code-line typing">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-property">intelligence</span> = 
+                            <span class="code-string">"Advanced"</span>;
+                        </div>
+                        <div class="code-line typing">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-property">capabilities</span> = 
+                            <span class="code-string">"Unlimited"</span>;
+                        </div>
+                        <div class="code-line typing">
+                            &nbsp;&nbsp;}
+                        </div>
+                        <div class="code-line typing">
+                            &nbsp;&nbsp;
+                        </div>
+                        <div class="code-line typing">
+                            &nbsp;&nbsp;<span class="code-keyword">async</span> 
+                            <span class="code-function">generateCode</span>(<span class="code-parameter">prompt</span>) {
+                        </div>
+                        <div class="code-line typing">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> 
+                            <span class="code-string">"智能代码生成"</span>;
+                        </div>
+                        <div class="code-line typing">
+                            &nbsp;&nbsp;}
+                        </div>
+                        <div class="code-line typing">
+                            }
+                        </div>
+                        <div class="code-cursor"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-text">向下滚动探索更多</div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于区域 -->
+    <section id="about" class="about">
+        <!-- 背景装饰 -->
+        <div class="about-background">
+            <div class="about-orb orb-1"></div>
+            <div class="about-orb orb-2"></div>
+            <div class="about-orb orb-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">关于AI智能助手</h2>
+                <p class="section-subtitle">用AI重新定义编程体验</p>
+            </div>
+            
+            <div class="about-content">
+                <!-- 主要介绍 -->
+                <div class="about-main" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-intro">
+                        <div class="intro-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>智能编程伙伴</h3>
+                        <p>AI智能助手是你的专业编程伙伴，基于先进的自然语言处理技术，能够理解你的需求并提供精准的编程解决方案。无论是代码生成、错误修复、还是架构设计，我都能为你提供专业的帮助。</p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <h3>核心优势</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>多语言支持</h4>
+                                    <p>支持100+编程语言和框架</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-magic"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>智能生成</h4>
+                                    <p>智能代码生成和优化建议</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bug"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>错误修复</h4>
+                                    <p>实时错误检测和修复指导</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-architecture"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>架构设计</h4>
+                                    <p>架构设计和最佳实践推荐</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>文档生成</h4>
+                                    <p>技术文档自动生成</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>学习规划</h4>
+                                    <p>个性化学习路径规划</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 技术栈展示 -->
+                <div class="about-tech" data-aos="fade-up" data-aos-delay="200">
+                    <h3>技术栈支持</h3>
+                    <div class="tech-showcase">
+                        <div class="tech-category">
+                            <h4>前端技术</h4>
+                            <div class="tech-items">
+                                <div class="tech-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-vuejs"></i>
+                                    <span>Vue.js</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-angular"></i>
+                                    <span>Angular</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4>后端技术</h4>
+                            <div class="tech-items">
+                                <div class="tech-item">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-java"></i>
+                                    <span>Java</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-php"></i>
+                                    <span>PHP</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-golang"></i>
+                                    <span>Go</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>数据库</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4>云服务 & DevOps</h4>
+                            <div class="tech-items">
+                                <div class="tech-item">
+                                    <i class="fab fa-docker"></i>
+                                    <span>Docker</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-aws"></i>
+                                    <span>AWS</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-google"></i>
+                                    <span>Google Cloud</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-kubernetes"></i>
+                                    <span>Kubernetes</span>
+                                </div>
+                                <div class="tech-item">
+                                    <i class="fab fa-linux"></i>
+                                    <span>Linux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 发展历程 -->
+                <div class="about-timeline" data-aos="fade-up" data-aos-delay="300">
+                    <h3>发展历程</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>2023年 - 项目启动</h4>
+                                <p>基于先进的大语言模型技术，开始构建AI智能编程助手</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>2024年 - 核心功能</h4>
+                                <p>实现智能代码生成、错误修复、架构设计等核心功能</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>2024年 - 用户增长</h4>
+                                <p>服务全球超过100万开发者，成为最受欢迎的AI编程助手</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>未来 - 持续创新</h4>
+                                <p>持续优化算法，扩展功能，为开发者提供更好的编程体验</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 统计数据 -->
+                <div class="about-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">编程语言</div>
+                        <div class="stat-description">支持主流编程语言和框架</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-number" data-target="999">0</div>
+                        <div class="stat-label">代码生成</div>
+                        <div class="stat-description">无限可能的代码组合</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">在线服务</div>
+                        <div class="stat-description">全天候智能助手服务</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-target="1000000">0</div>
+                        <div class="stat-label">开发者信赖</div>
+                        <div class="stat-description">全球开发者的一致选择</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">效率提升</div>
+                        <div class="stat-description">平均开发效率提升</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">用户评分</div>
+                        <div class="stat-description">用户满意度评分</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 能力展示区域 -->
+    <section id="capabilities" class="capabilities">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">我的核心能力</h2>
+            <div class="capabilities-grid">
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="capability-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>智能代码生成</h3>
+                    <p>根据你的需求描述，自动生成高质量的代码，支持多种编程语言和框架，包括React、Vue、Node.js、Python等。</p>
+                    <div class="capability-tags">
+                        <span class="tag">多语言</span>
+                        <span class="tag">框架支持</span>
+                        <span class="tag">最佳实践</span>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="capability-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>智能错误修复</h3>
+                    <p>智能识别代码中的错误和问题，提供详细的修复建议和解决方案，包括语法错误、逻辑错误和性能问题。</p>
+                    <div class="capability-tags">
+                        <span class="tag">错误检测</span>
+                        <span class="tag">自动修复</span>
+                        <span class="tag">性能优化</span>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="capability-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>代码优化重构</h3>
+                    <p>分析现有代码，提供性能优化、可读性改进和最佳实践建议，帮助提升代码质量和维护性。</p>
+                    <div class="capability-tags">
+                        <span class="tag">性能优化</span>
+                        <span class="tag">代码重构</span>
+                        <span class="tag">质量提升</span>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="capability-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>架构设计指导</h3>
+                    <p>帮助设计软件架构，提供系统设计模式、微服务架构、云原生设计等最佳实践指导。</p>
+                    <div class="capability-tags">
+                        <span class="tag">系统设计</span>
+                        <span class="tag">微服务</span>
+                        <span class="tag">云原生</span>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="capability-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>技术文档生成</h3>
+                    <p>生成技术文档、API文档、注释和说明，提高代码的可维护性和团队协作效率。</p>
+                    <div class="capability-tags">
+                        <span class="tag">API文档</span>
+                        <span class="tag">技术文档</span>
+                        <span class="tag">注释生成</span>
+                    </div>
+                </div>
+                
+                <div class="capability-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="capability-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>学习路径指导</h3>
+                    <p>提供编程学习路径、概念解释和实际项目指导，加速你的学习进程和技术成长。</p>
+                    <div class="capability-tags">
+                        <span class="tag">学习路径</span>
+                        <span class="tag">概念解释</span>
+                        <span class="tag">项目指导</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 智能体区域 -->
+    <section id="agents" class="agents">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">智能体生态</h2>
+            <p class="section-subtitle" data-aos="fade-up">探索各种专业智能体，满足不同场景需求</p>
+            
+            <div class="agents-grid">
+                <div class="agent-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="agent-header">
+                        <div class="agent-avatar">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="agent-info">
+                            <h3>代码专家</h3>
+                            <span class="agent-type">编程助手</span>
+                        </div>
+                    </div>
+                    <p>专注于代码生成、调试和优化，支持多种编程语言和框架。</p>
+                    <div class="agent-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                    </div>
+                </div>
+
+                <div class="agent-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="agent-header">
+                        <div class="agent-avatar">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="agent-info">
+                            <h3>数据科学家</h3>
+                            <span class="agent-type">数据分析</span>
+                        </div>
+                    </div>
+                    <p>擅长数据处理、分析和可视化，提供机器学习模型建议。</p>
+                    <div class="agent-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="agent-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="agent-header">
+                        <div class="agent-avatar">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="agent-info">
+                            <h3>UI设计师</h3>
+                            <span class="agent-type">设计助手</span>
+                        </div>
+                    </div>
+                    <p>提供UI/UX设计建议，生成CSS样式和前端组件代码。</p>
+                    <div class="agent-tags">
+                        <span class="tag">CSS</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Vue</span>
+                    </div>
+                </div>
+
+                <div class="agent-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="agent-header">
+                        <div class="agent-avatar">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="agent-info">
+                            <h3>DevOps专家</h3>
+                            <span class="agent-type">运维助手</span>
+                        </div>
+                    </div>
+                    <p>协助部署、容器化和云服务配置，提供CI/CD最佳实践。</p>
+                    <div class="agent-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                </div>
+
+                <div class="agent-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="agent-header">
+                        <div class="agent-avatar">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="agent-info">
+                            <h3>安全专家</h3>
+                            <span class="agent-type">安全助手</span>
+                        </div>
+                    </div>
+                    <p>代码安全审查，漏洞检测，安全最佳实践指导。</p>
+                    <div class="agent-tags">
+                        <span class="tag">安全审计</span>
+                        <span class="tag">漏洞检测</span>
+                        <span class="tag">最佳实践</span>
+                    </div>
+                </div>
+
+                <div class="agent-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="agent-header">
+                        <div class="agent-avatar">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="agent-info">
+                            <h3>产品经理</h3>
+                            <span class="agent-type">产品助手</span>
+                        </div>
+                    </div>
+                    <p>产品需求分析，功能设计，用户故事编写和项目管理。</p>
+                    <div class="agent-tags">
+                        <span class="tag">需求分析</span>
+                        <span class="tag">产品设计</span>
+                        <span class="tag">项目管理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提示词集合区域 -->
+    <section id="prompts" class="prompts">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">实用提示词集合</h2>
+            <p class="section-subtitle" data-aos="fade-up">点击提示词即可复制，帮助你更好地与AI助手沟通</p>
+            
+            <div class="prompts-grid">
+                <div class="prompt-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-code"></i> 代码生成</h3>
+                    <div class="prompt-list">
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请帮我创建一个响应式的导航栏，使用HTML、CSS和JavaScript，包含移动端菜单</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">我需要一个用户注册表单，包含验证功能，使用React和TypeScript实现</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请生成一个RESTful API的Express.js服务器代码，包含用户认证和数据库连接</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">帮我创建一个Python爬虫，爬取指定网站的数据并保存到CSV文件</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prompt-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-bug"></i> 错误修复</h3>
+                    <div class="prompt-list">
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">我的代码出现了错误，请帮我分析并修复：[粘贴错误代码]</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">这个函数运行很慢，请帮我优化性能并提供性能分析</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请检查这段代码的安全漏洞并提供修复建议</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">我的React组件有内存泄漏问题，请帮我诊断和修复</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prompt-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-lightbulb"></i> 代码优化</h3>
+                    <div class="prompt-list">
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请重构这段代码，提高可读性和可维护性，遵循最佳实践</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">如何优化这个数据库查询的性能？请提供多种优化方案</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请为这段代码添加适当的注释和文档，包括JSDoc格式</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">帮我优化这个算法的复杂度，从O(n²)降低到O(n log n)</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prompt-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3><i class="fas fa-project-diagram"></i> 架构设计</h3>
+                    <div class="prompt-list">
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请设计一个微服务架构的电商系统，包含用户、订单、支付、商品服务</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">我需要一个可扩展的前端项目结构，使用React + TypeScript + Vite</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请推荐适合这个项目的技术栈和架构模式，考虑性能和可维护性</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">帮我设计一个高并发的API网关架构，包含负载均衡和缓存策略</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prompt-category" data-aos="fade-up" data-aos-delay="500">
+                    <h3><i class="fas fa-robot"></i> 智能体协作</h3>
+                    <div class="prompt-list">
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请扮演代码专家，帮我审查这段代码并提供改进建议</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">作为UI设计师，请为这个功能设计用户界面和交互流程</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请以DevOps专家的身份，帮我设计CI/CD流水线和部署策略</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">作为安全专家，请对这段代码进行安全审计和风险评估</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prompt-category" data-aos="fade-up" data-aos-delay="600">
+                    <h3><i class="fas fa-graduation-cap"></i> 学习指导</h3>
+                    <div class="prompt-list">
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请为我制定一个学习React的详细计划，从基础到高级</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">解释一下设计模式的概念和常见模式，并提供实际应用案例</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">请推荐一些适合初学者的编程项目，按难度递增排序</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="prompt-item" data-action="copy">
+                            <div class="prompt-text">帮我制定一个从零开始学习机器学习的路线图</div>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 案例展示区域 -->
+    <section id="examples" class="examples">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">成功案例</h2>
+            <p class="section-subtitle" data-aos="fade-up">看看AI助手如何帮助开发者解决实际问题，提升开发效率</p>
+            
+            <div class="examples-grid">
+                <div class="example-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="example-badge completed">已完成</div>
+                    <div class="example-header">
+                        <div class="example-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>电商平台重构</h3>
+                    </div>
+                    <p>帮助团队重构老旧电商系统，采用现代化技术栈，显著提升用户体验和系统性能。</p>
+                    <div class="example-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="example-stats">
+                        <div class="example-stat">
+                            <span class="example-stat-number">50%</span>
+                            <span class="example-stat-label">性能提升</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">30%</span>
+                            <span class="example-stat-label">代码减少</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">2周</span>
+                            <span class="example-stat-label">开发时间</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="example-badge completed">已完成</div>
+                    <div class="example-header">
+                        <div class="example-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>数据分析平台</h3>
+                    </div>
+                    <p>构建实时数据分析平台，处理百万级数据，提供直观的可视化报表和智能洞察。</p>
+                    <div class="example-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Apache Kafka</span>
+                    </div>
+                    <div class="example-stats">
+                        <div class="example-stat">
+                            <span class="example-stat-number">1M+</span>
+                            <span class="example-stat-label">数据处理</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">95%</span>
+                            <span class="example-stat-label">准确率</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">实时</span>
+                            <span class="example-stat-label">数据更新</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="example-badge completed">已完成</div>
+                    <div class="example-header">
+                        <div class="example-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>移动应用开发</h3>
+                    </div>
+                    <p>快速开发跨平台移动应用，支持iOS和Android，提供原生级别的用户体验。</p>
+                    <div class="example-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Redux</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <div class="example-stats">
+                        <div class="example-stat">
+                            <span class="example-stat-number">双平台</span>
+                            <span class="example-stat-label">iOS/Android</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">4.8★</span>
+                            <span class="example-stat-label">用户评分</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">10万+</span>
+                            <span class="example-stat-label">下载量</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="example-badge in-progress">进行中</div>
+                    <div class="example-header">
+                        <div class="example-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>微服务架构</h3>
+                    </div>
+                    <p>设计并实现高可扩展的微服务架构，支持业务快速迭代和系统弹性扩展。</p>
+                    <div class="example-tech">
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">gRPC</span>
+                    </div>
+                    <div class="example-stats">
+                        <div class="example-stat">
+                            <span class="example-stat-number">99.9%</span>
+                            <span class="example-stat-label">可用性</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">10+</span>
+                            <span class="example-stat-label">服务模块</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">自动</span>
+                            <span class="example-stat-label">扩缩容</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="example-badge completed">已完成</div>
+                    <div class="example-header">
+                        <div class="example-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>安全审计系统</h3>
+                    </div>
+                    <p>构建智能安全审计系统，自动检测代码漏洞，提供安全建议和修复方案。</p>
+                    <div class="example-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">机器学习</span>
+                        <span class="tech-tag">OWASP</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="example-stats">
+                        <div class="example-stat">
+                            <span class="example-stat-number">98%</span>
+                            <span class="example-stat-label">检测率</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">5分钟</span>
+                            <span class="example-stat-label">扫描时间</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">0</span>
+                            <span class="example-stat-label">误报率</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="example-badge planned">计划中</div>
+                    <div class="example-header">
+                        <div class="example-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI助手集成</h3>
+                    </div>
+                    <p>将AI助手集成到开发工作流中，提供智能代码建议、自动重构和文档生成。</p>
+                    <div class="example-tech">
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">VS Code</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">CI/CD</span>
+                    </div>
+                    <div class="example-stats">
+                        <div class="example-stat">
+                            <span class="example-stat-number">40%</span>
+                            <span class="example-stat-label">效率提升</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">智能</span>
+                            <span class="example-stat-label">代码建议</span>
+                        </div>
+                        <div class="example-stat">
+                            <span class="example-stat-number">自动</span>
+                            <span class="example-stat-label">文档生成</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI智能助手</h4>
+                    <p>你的智能编程伙伴，让编程更简单、更高效、更智能。</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#capabilities">能力</a></li>
+                        <li><a href="#agents">智能体</a></li>
+                        <li><a href="#prompts">提示词</a></li>
+                        <li><a href="#examples">案例</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>技术支持</h4>
+                    <ul>
+                        <li><a href="#">API文档</a></li>
+                        <li><a href="#">使用指南</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">社区论坛</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>随时为你提供技术支持和服务</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> support@aiassistant.com</p>
+                        <p><i class="fas fa-phone"></i> 400-123-4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI智能助手. 让编程更智能，让开发更高效。</p>
+                <div class="footer-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">服务条款</a>
+                    <a href="#">Cookie政策</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 复制成功提示 -->
+    <div id="copy-notification" class="copy-notification">
+        <i class="fas fa-check"></i>
+        <span>提示词已复制到剪贴板！</span>
+    </div>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 使用本地AOS依赖 -->
+    <script src="https://cdn.staticfile.org/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
