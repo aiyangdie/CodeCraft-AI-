@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/covers/39-CodeCraft-AI.jpg" alt="CodeCraft-AI- 项目封面" width="100%"></p>
+
 # 🤖 CodeCraft AI — AI 智能助手展示页
 
 > 用 AI 重新定义编程体验 — 你的智能编程伙伴
